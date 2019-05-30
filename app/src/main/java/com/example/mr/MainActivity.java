@@ -17,14 +17,16 @@ public class MainActivity extends AppCompatActivity {
     TextView tv;
     public Button Ramdom ,Solution;
     public Random rnd= new Random();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
         a=findViewById(R.id.a);
         b=findViewById(R.id.b);
         c=findViewById(R.id.c);
         tv=findViewById(R.id.textView);
-        setContentView(R.layout.activity_main);
         Intent int1=new Intent();
     }
 
