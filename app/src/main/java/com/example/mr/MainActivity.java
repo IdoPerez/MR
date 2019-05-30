@@ -40,8 +40,11 @@ public class MainActivity extends AppCompatActivity {
             if((Math.sqrt(b1*b1-4*a1*c1)<0)){
                 tv.setText("Error the sqrt is negative");
         } else {
-                x1 = (-b1 + ((Math.sqrt(b1 * b1 - 4 * a1 * c1) / 2 * a1)));
-                x2 = (-b1 - (Math.sqrt(b1 * b1 - 4 * a1 * c1) / 2 * a1));
+                Intent startS=new Intent(this, ActivitySolution.class);
+                startS.putExtra("a1",a1);
+                startS.putExtra("b1",b1);
+                startS.putExtra("c1",c1);
+                startActivity(startS);
             }
     }
 
@@ -49,7 +52,12 @@ public class MainActivity extends AppCompatActivity {
         a1=rnd.nextInt(100)+1;
         b1=rnd.nextInt(100)+1;
         c1=rnd.nextInt(100)+1;
-        x1 = (-b1 + ((Math.sqrt(b1 * b1 - 4 * a1 * c1) / 2 * a1)));
-        x2 = (-b1 - (Math.sqrt(b1 * b1 - 4 * a1 * c1) / 2 * a1));
+        x1 = (-b1 + ((Math.sqrt(b1 * b1 - 4 * a1 * c1) / (2 * a1))));
+        x2 = (-b1 - (Math.sqrt(b1 * b1 - 4 * a1 * c1) / (2 * a1)));
+        Intent startSR=new Intent(this, ActivitySolution.class);
+        startSR.putExtra("a1",a1);
+        startSR.putExtra("b1",b1);
+        startSR.putExtra("c1",c1);
+        startActivity(startSR);
     }
 }

@@ -18,7 +18,7 @@
             android:id="@+id/textView"
             android:layout_width="200dp"
             android:layout_height="60dp"
-            android:text="hrthrt"
+            android:text="MR"
             android:textSize="20dp"/>
 
         <LinearLayout
