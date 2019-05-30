@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="hrthrt"
+            android:textSize="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/a"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="a"
+                android:textSize="25dp"
+                android:inputType="numberDecimal" />
+
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/b"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:hint="b"
+                android:textSize="25dp"
+                android:inputType="numberDecimal" />
+
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/c"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="c"
+                android:textSize="25dp"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/Solution"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:text="Solution"
+                android:textSize="20dp"
+                android:onClick="startsolution"/>
+
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/Random"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:text="Random Num"
+                android:textSize="15dp"
+                android:onClick="RandomNum"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>
